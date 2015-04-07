@@ -1,0 +1,38 @@
+body {
+	font-family: 'Helvetica', sans-serif;
+}
+
+form {
+	width:380px;
+	margin:0 auto;
+}
+
+.text-row {
+	padding:10px;
+}
+
+.text-row span {
+	display:inline-block;
+	width:100px;
+}
+
+.text-area-row span {
+	vertical-align:top;
+}
+
+input[type="submit"] {
+	width:100px;
+	float:right;
+	margin-top:10px;
+	margin-right:12px;
+}
+
+input[type="text"], textarea {
+	width:250px;
+}
+
+textarea {
+	margin-left:45px;
+	margin-top:4px;
+	height:80px;
+}
