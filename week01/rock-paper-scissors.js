@@ -10,7 +10,7 @@ var computerChoice = Math.random();
 
 if (0 < computerChoice < 0.33) {
 	computerChoice = "rock";
-} else if (0.33 < computerChoice < 0.67) {
+} else if (0.33 < computerChoice && computerChoice < 0.67) {
 	computerChoice = "paper";
 } else {
 	computerChoice = "scissors";
