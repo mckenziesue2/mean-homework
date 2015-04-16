@@ -8,7 +8,7 @@ console.log(myChoiceLower);
 
 var computerChoice = Math.random();
 
-if (0 < computerChoice < 0.33) {
+if (0 < computerChoice && computerChoice < 0.33) {
 	computerChoice = "rock";
 } else if (0.33 < computerChoice && computerChoice < 0.67) {
 	computerChoice = "paper";
@@ -29,7 +29,7 @@ var compare = function(choice1, choice2) {
 		} else {
 			return "Rock wins!";
 		}
-	} else if (choice1 === "rock") {
+	} else if (choice1 === "paper") {
 		if (choice2 === "scissors") {
 			return "Scissors wins!";
 		} else {
