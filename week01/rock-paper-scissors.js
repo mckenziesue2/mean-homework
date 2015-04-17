@@ -4,7 +4,7 @@ var myChoice = ask.question('Do you choose rock, paper, or scissors?');
 
 var myChoiceLower = myChoice.toLowerCase();
 
-console.log(myChoiceLower);
+console.log("My Choice: " + myChoiceLower);
 
 var computerChoice = Math.random();
 
@@ -18,28 +18,28 @@ if (0 < computerChoice && computerChoice < 0.33) {
 
 var computerChoiceLower = computerChoice.toLowerCase();
 
-console.log(computerChoiceLower);
+console.log("Computer: " + computerChoiceLower);
 
 var compare = function(choice1, choice2) {
 	if (choice1 === choice2) {
 		return "It is a tie!";
 	} else if (choice1 === "rock") {
 		if (choice2 === "paper") {
-			return "Paper wins!";
+			return "The computer wins!";
 		} else {
-			return "Rock wins!";
+			return "You win!";
 		}
 	} else if (choice1 === "paper") {
 		if (choice2 === "scissors") {
-			return "Scissors wins!";
+			return "The computer wins!";
 		} else {
-			return "Paper wins!";
+			return "You win!";
 		}
 	} else if (choice1 === "scissors") {
 		if (choice2 === "rock") {
-			return "Rock wins!";
+			return "The computer wins!";
 		} else {
-			return "Scissors wins!";
+			return "You win!";
 		}
 	}
 };

@@ -1,19 +1,22 @@
+var ask = require('readline-sync');
+
+var myChoice = ask.question('Choose your coordinates: (-,-).');
+
 var grid = [];
 var rows = 10;
 var columns = 10;
 
 var location = {
 	var shipLocation = Math.random() * 5;
-	var ship = false;
+	var ship = Math.floor(shipLocation);
 	var hit = false;
 
-	if (hit === shipLocation) {
-		return ship = true;
-		return hit = true;
-	} else {
-		return ship = false;
-		return hit = false;
-	}
+	for (x = 0; x < ship; x++)
+		if (shipLocation === x) {
+			return hit = true;
+		} else {
+			return hit = false;
+		}
 };
 
 
@@ -32,5 +35,5 @@ for (var i = 0; i < iArray.length; i++) {
 }
 
 for (var i = 0; i < gridLine.length; i++) {
-	console.log(gridLine[i]);
+	console.log(gridLine.replace([i], "0");
 }
