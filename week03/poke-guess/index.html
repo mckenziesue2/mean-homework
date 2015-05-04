@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png"> -->
 
     <title>Poke Guess</title>
 
@@ -51,30 +51,30 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<h1>Who's that Pokemon?</h1>
-					<form class="form-inline" role="form">
+					 <!-- <form class="form-inline" role="form"> -->
 					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter pokemon name">
+					    <input type="email" class="form-control" id="user-guess" placeholder="Enter pokemon name">
 					  </div>
-					  <button type="submit" class="btn btn-warning btn-lg">Submit</button>
-					</form>					
+					  <button type="submit" id="submit-guess" class="btn btn-warning btn-lg">Submit</button>
+					<!-- </form>					 -->
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
-					<img class="img-responsive" src="assets/img/001.png" alt="">
+					<img class="img-responsive" id="pokemon-img" src="assets/img/001.png" alt="">
 				</div><!-- /col-lg-6 -->
 				<div class="col-sm-1">
-					<img class="img-responsive" src="assets/img/pokeball.png" alt="">
+					<img class="img-responsive" id="ball1" src="assets/img/pokeball.png" alt="">
 				</div>
 				<div class="col-sm-1">
-					<img class="img-responsive" src="assets/img/pokeball.png" alt="">
+					<img class="img-responsive" id="ball2" src="assets/img/pokeball.png" alt="">
 				</div>
 				<div class="col-sm-1">
-					<img class="img-responsive" src="assets/img/pokeball.png" alt="">
+					<img class="img-responsive" id="ball3" src="assets/img/pokeball.png" alt="">
 				</div>
 				<div class="col-sm-1">
-					<img class="img-responsive" src="assets/img/pokeball.png" alt="">
+					<img class="img-responsive" id="ball4" src="assets/img/pokeball.png" alt="">
 				</div>
 				<div class="col-sm-1">
-					<img class="img-responsive" src="assets/img/pokeball-grey.png" alt="">
+					<img class="img-responsive" id="ball5" src="assets/img/pokeball-grey.png" alt="">
 				</div>
 			</div><!-- /row -->
 		</div><!-- /container -->
@@ -85,19 +85,19 @@
 		<div class="lives">
 			<div class="row">
 				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/sad.png" alt="">
+					<img class="img-responsive" id="sad1" src="assets/img/sad.png" alt="">
 				</div>
 				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/sad.png" alt="">
+					<img class="img-responsive" id="sad2" src="assets/img/sad.png" alt="">
 				</div>
 				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/sad.png" alt="">
+					<img class="img-responsive" id="sad3" src="assets/img/sad.png" alt="">
 				</div>
 			</div>
 		</div>
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<h1>Time Remaining:<br/>0:10</h1>
+				<h1>Time Remaining:<br/><span id="timer">0:10</span></h1>
 				<h3>Enter the Pokemon's name and press submit before the time runs out!</h3>
 			</div>
 		</div><!-- /row -->
@@ -110,5 +110,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
