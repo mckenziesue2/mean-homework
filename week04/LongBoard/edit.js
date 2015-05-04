@@ -1,4 +1,7 @@
-//hide form, when push edit button form shows and button changes to preview
+//hide form, when push edit button form shows
+//button changes to preview
+//add + button when editing
+
 $("#edit-form").hide();
 $("#add-btn-text").hide();
 
@@ -19,16 +22,11 @@ var form = function(brand, name, length, style, price, bottomImage, topImage) {
 	topImage: this.topImage;
 }
 
-// document.getElementById("#name") = this.name;
-// document.getElementById("#price") = this.price;
-
-
 //show form with information filled out in form
 
 //when edit and push save button, save form and API server
 
-//add + button when editing
-
+//when push save, it goes back to the main screen
 $("#save-btn").click(function() { 
 	$("#edit-form").hide(); 
 	$("#items").show();
