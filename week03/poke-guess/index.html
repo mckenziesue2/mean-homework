@@ -29,25 +29,18 @@
   <body>
 
     <!-- Fixed navbar -->
-      <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><h1>Poke Guess</h1></a>
-
-		<div class="mt centered">
-			<div class="col-md-9">
-				<h4>Enter the Pokemon's name and press submit before the time runs out!</h4>
-				<p>Time Remaining: 0:<span id="timer2">10</span></p>
+    <div class="mt">
+        <a class="col-md-3 col-sm-3" href="#"><h1>Poke Guess</h1></a>
+		<div class="centered">
+			<div class="col-md-7 col-sm-9 padding-top10 col-md-offset-2">
+				<h4>Submit the Pokemon's name before the time runs out!  <b>Time Remaining: 0:<span id="timer2">10</b></span></h4>
 			</div>
 		</div><!-- /row -->
-        </div>
+    </div>
 
 	<div id="headerwrap">
-		<div class="col-md-10 col-lg-offset-3">
-				<div class="col-lg-5 col-md-5 col-sm-5">
+		<div class="col-md-9 col-sm-11 col-lg-offset-3 col-md-offset-2 col-sm-offset-1">
+				<div class="col-lg-5 col-md-6 col-sm-7">
 					<h1>Who's that Pokemon?</h1>
 					 <!-- <form class="form-inline" role="form"> -->
 					  <div class="form-group form-inline">
@@ -56,7 +49,7 @@
 					  <button type="submit" id="submit-guess" class="btn btn-warning btn-lg float">Submit</button>
 					<!-- </form>					 -->
 				</div><!-- /col-lg-6 -->
-				<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="col-lg-4 col-md-4 col-sm-4 padding-top10">
 					<img class="img-responsive" id="pokemon-img" src="assets/img/001.png" alt="">
 				</div><!-- /col-lg-6 -->
 			</div>
@@ -75,20 +68,20 @@
 		</div>
 	</div><!-- /headerwrap -->
 
-		<div class="row col-md-5 col-sm-12 col-offset-2 padding-bottom30 margin-auto">
-			<div class="col-sm-2">
+		<div class="row col-lg-7 col-md-7 col-sm-12 col-md-offset-3 padding-bottom30 margin-auto">
+			<div class="ball">
 				<img class="img-responsive" id="ball1" src="assets/img/pokeball-grey.png" alt="">
 			</div>
-			<div class="col-sm-2">
+			<div class="ball">
 				<img class="img-responsive" id="ball2" src="assets/img/pokeball-grey.png" alt="">
 			</div>
-			<div class="col-sm-2">
+			<div class="ball">
 				<img class="img-responsive" id="ball3" src="assets/img/pokeball-grey.png" alt="">
 			</div>
-			<div class="col-sm-2">
+			<div class="ball">
 				<img class="img-responsive" id="ball4" src="assets/img/pokeball-grey.png" alt="">
 			</div>
-			<div class="col-sm-2">
+			<div class="ball">
 				<img class="img-responsive" id="ball5" src="assets/img/pokeball-grey.png" alt="">
 			</div>
 		</div><!-- /row -->

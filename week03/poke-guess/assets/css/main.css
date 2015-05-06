@@ -12,10 +12,10 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #555;
-    background-color: #3498db;
     background-image: url('../img/background.png');
     background-position: bottom center;
     background-size: 100%;
+    background-repeat:no-repeat;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -103,6 +103,10 @@ a:after {
     padding-bottom:30px;
 }
 
+.padding-top10 {
+    padding-top:10px;
+}
+
 .float {
     float:left;
 }
@@ -112,7 +116,7 @@ a:after {
 }
 
 .navbar-default {
-	background-color: #3498db;
+	background-color: transparet;
 	border-color: transparent;
 }
 
@@ -135,6 +139,7 @@ a:after {
 	height: 42px;
 	font-size: 18px;
 	width: 250px;
+    border-radius:0;
 }
 
 i {
@@ -143,14 +148,20 @@ i {
 }
 
 .lives { margin: auto; max-width: 300px; padding-top:20px;}
+
+.ball {
+    width:80px;
+    float:left;
+    padding-right:20px;
+}
 /* HeaderWrap */
 #headerwrap {
 	/* background: url(../img/bg01.jpg) no-repeat center top; */
 	margin-top: -20px;
-	padding-top:80px;
+	padding-top:120px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 550px;
+	min-height: 650px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -174,6 +185,6 @@ i {
 }
 
 .btn-lg {
-    line-height:1.15;
+    line-height:1.1;
     border-radius:0;
 }
