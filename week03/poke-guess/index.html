@@ -29,76 +29,67 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><b>Poke Guess</b></a>
+          <a class="navbar-brand" href="#"><h1>Poke Guess</h1></a>
+
+		<div class="mt centered">
+			<div class="col-md-9">
+				<h4>Enter the Pokemon's name and press submit before the time runs out!</h4>
+				<p>Time Remaining: 0:<span id="timer2">10</span></p>
+			</div>
+		</div><!-- /row -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
 
 	<div id="headerwrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
+		<div class="col-md-10 col-lg-offset-3">
+				<div class="col-lg-5 col-md-5 col-sm-5">
 					<h1>Who's that Pokemon?</h1>
 					 <!-- <form class="form-inline" role="form"> -->
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="user-guess" placeholder="Enter pokemon name">
+					  <div class="form-group form-inline">
+					    <input type="text" class="float form-control" id="user-guess" placeholder="Enter pokemon name">
 					  </div>
-					  <button type="submit" id="submit-guess" class="btn btn-warning btn-lg">Submit</button>
+					  <button type="submit" id="submit-guess" class="btn btn-warning btn-lg float">Submit</button>
 					<!-- </form>					 -->
 				</div><!-- /col-lg-6 -->
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<img class="img-responsive" id="pokemon-img" src="assets/img/001.png" alt="">
 				</div><!-- /col-lg-6 -->
-				<div class="col-sm-1">
-					<img class="img-responsive" id="ball1" src="assets/img/pokeball.png" alt="">
-				</div>
-				<div class="col-sm-1">
-					<img class="img-responsive" id="ball2" src="assets/img/pokeball.png" alt="">
-				</div>
-				<div class="col-sm-1">
-					<img class="img-responsive" id="ball3" src="assets/img/pokeball.png" alt="">
-				</div>
-				<div class="col-sm-1">
-					<img class="img-responsive" id="ball4" src="assets/img/pokeball.png" alt="">
-				</div>
-				<div class="col-sm-1">
-					<img class="img-responsive" id="ball5" src="assets/img/pokeball-grey.png" alt="">
-				</div>
-			</div><!-- /row -->
+			</div>
 		</div><!-- /container -->
-	</div><!-- /headerwrap -->
-	
-	
-	<div class="container">
-		<div class="lives">
-			<div class="row">
-				<div class="col-lg-4">
-					<img class="img-responsive" id="sad1" src="assets/img/sad.png" alt="">
-				</div>
-				<div class="col-lg-4">
-					<img class="img-responsive" id="sad2" src="assets/img/sad.png" alt="">
-				</div>
-				<div class="col-lg-4">
-					<img class="img-responsive" id="sad3" src="assets/img/sad.png" alt="">
-				</div>
+
+		<div class="col-md-6">
+			<div class="col-lg-2 col-sm-2">
+				<img class="img-responsive" id="sad1" src="assets/img/sad.png" alt="">
+			</div>
+			<div class="col-lg-2 col-sm-2">
+				<img class="img-responsive" id="sad2" src="assets/img/sad.png" alt="">
+			</div>
+			<div class="col-lg-2 col-sm-2">
+				<img class="img-responsive" id="sad3" src="assets/img/sad.png" alt="">
 			</div>
 		</div>
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>Time Remaining:<br/><span id="timer">0:10</span></h1>
-				<h3>Enter the Pokemon's name and press submit before the time runs out!</h3>
+	</div><!-- /headerwrap -->
+
+		<div class="row col-md-5 col-sm-12 col-offset-2 padding-bottom30 margin-auto">
+			<div class="col-sm-2">
+				<img class="img-responsive" id="ball1" src="assets/img/pokeball-grey.png" alt="">
+			</div>
+			<div class="col-sm-2">
+				<img class="img-responsive" id="ball2" src="assets/img/pokeball-grey.png" alt="">
+			</div>
+			<div class="col-sm-2">
+				<img class="img-responsive" id="ball3" src="assets/img/pokeball-grey.png" alt="">
+			</div>
+			<div class="col-sm-2">
+				<img class="img-responsive" id="ball4" src="assets/img/pokeball-grey.png" alt="">
+			</div>
+			<div class="col-sm-2">
+				<img class="img-responsive" id="ball5" src="assets/img/pokeball-grey.png" alt="">
 			</div>
 		</div><!-- /row -->
 		
